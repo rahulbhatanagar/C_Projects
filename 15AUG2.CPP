@@ -1,0 +1,43 @@
+#include<stdio.h>
+#include<conio.h>
+#include<graphics.h>
+void main()
+{
+int gd=DETECT,gm;
+initgraph(&gd,&gm,"C://TC//BGI");
+outtextxy(getmaxx()/2,getmaxy()/2," CELEBRATING 15TH AUGUST ");
+line(150,50,150,400);
+line(150,50,300,50);
+line(150,200,300,200);
+line(300,50,300,200);
+rectangle(140,400,160,410);
+rectangle(130,410,170,420);
+setfillstyle(SOLID_FILL,12);
+line(150,100,300,100);
+floodfill(175,75,WHITE);
+setfillstyle(SOLID_FILL,15);
+line(150,150,300,150);
+floodfill(180,130,WHITE);
+setfillstyle(SOLID_FILL,2);
+floodfill(250,160,WHITE);
+setcolor(BLUE);
+setfillstyle(SOLID_FILL,BLUE);
+circle(225,125,5);
+floodfill(226,126,BLUE);
+setcolor(BLUE);
+circle(225,125,25);
+line(225,100,225,150);
+line(200,125,250,125);
+line(204,111,248,138);
+line(208,109,243,140);
+line(201,120,248,130);
+line(220,102,230,148);
+line(212,103,238,146);
+line(246,115,204,135);
+line(243,110,207,142);
+line(240,105,213,145);
+line(235,102,218,148);
+line(248,121,202,129);
+getch();
+closegraph();
+}
